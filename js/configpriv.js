@@ -68,7 +68,7 @@ $(document).ready(function(){
     });
   });
 
-componente = document.getElementById('font-weight-bold');
+componente = document.getElementById('titulo-primavera-bar');
 const textoServicios = "Primavera bar";
 index = 0;
 
