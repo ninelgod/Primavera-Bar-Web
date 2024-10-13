@@ -68,7 +68,7 @@ $(document).ready(function(){
     });
   });
 
-componente = document.getElementById('textoServicios');
+componente = document.getElementById('texto-services');
 const textoServicios = "Nuestros servicios";
 let index = 0;
 
