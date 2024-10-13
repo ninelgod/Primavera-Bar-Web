@@ -68,16 +68,3 @@ $(document).ready(function(){
     });
   });
 
-componente = document.getElementById('texto-services');
-const textoServicios = "Nuestros servicios";
-let index = 0;
-
-funcion liveWriting (){
-  if(index < textoServicios.length){
-    componente += textoServicios[index];
-    index++;
-    setTimeout(liveWriting(),100);
-  }
-}
-
-liveWriting();
