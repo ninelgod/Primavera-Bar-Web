@@ -68,8 +68,8 @@ $(document).ready(function(){
     });
   });
 
-componente = document.getElementById('texto-services');
-const textoServicios = "Nuestros servicios";
+componente = document.getElementById('font-weight-bold');
+const textoServicios = "Primavera bar";
 index = 0;
 
 funcion liveWriting (){
