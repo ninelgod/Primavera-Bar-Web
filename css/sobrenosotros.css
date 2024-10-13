@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Edu+QLD+Beginner:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+.info2 {
+    margin-top: 70px;
+}
+
+.cardinfo {
+    display: flex;               
+    justify-content: center;     
+    margin-top: 70px;          
+}
+
+.custom-card {
+    display: flex;
+    max-width: 70%;
+    border: none;
+    transition: transform 0.3s;
+    margin: 120px 0;           
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.custom-card img {
+    width: 30%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.custom-card .card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.custom-card h5 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        flex-direction: column; 
+        max-width: 90%; 
+        margin: 100px auto; 
+        font-family: 'Saira',sans-serif;
+    }
+
+    .custom-card img {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .custom-card .card-content {
+        text-align: center; 
+        padding: 10px;
+    }
+}
