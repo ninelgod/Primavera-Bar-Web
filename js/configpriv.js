@@ -73,11 +73,24 @@ const textoServicios = "Primavera bar";
 index = 0;
 
 function liveWriting (){
-  if(index < textoServicios.length){
-    componente += textoServicios[index];
-    index++;
-    setTimeout(liveWriting(),100);
-  }
+    if(index < textoServicios.length){
+        mode = "writing";
+    } else {
+        mode = "erasing";
+        setTimeout(liveWriting,1000);
+    }
+    
+    if(mode == "writing"){
+        componente.textContent += textoServicios[index];
+        index++;
+        setTimeout(liveWriting,100);
+    }
+    
+    if(mode == "erasing"){
+        componente.textContent[index] = "";
+        index--;
+        setTimeout(liveWriting,100);
+    }
 }
 
 liveWriting();
