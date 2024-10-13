@@ -72,7 +72,7 @@ componente = document.getElementById('font-weight-bold');
 const textoServicios = "Primavera bar";
 index = 0;
 
-funcion liveWriting (){
+function liveWriting (){
   if(index < textoServicios.length){
     componente += textoServicios[index];
     index++;
