@@ -70,26 +70,33 @@ $(document).ready(function(){
 
 componente = document.getElementById('titulo-primavera-bar');
 const textoServicios = "Primavera bar";
-index = 0;
-
-function liveWriting (){
-    if(index < textoServicios.length){
+componente.textContent = textoServicios[0];
+index = 1;
+function liveWriting() {
+    if (index == 1) {
         mode = "writing";
-    } else {
-        mode = "erasing";
-        setTimeout(liveWriting,1000);
     }
-    
-    if(mode == "writing"){
+
+
+    if (index == textoServicios.length) {
+        mode = "erasing";
+    }
+
+    if (mode == "writing") {
         componente.textContent += textoServicios[index];
         index++;
-        setTimeout(liveWriting,100);
+        if (index < textoServicios.length) {
+            setTimeout(liveWriting, 100);
+        }
+        if (index == textoServicios.length) {
+            setTimeout(liveWriting, 2000);
+        }
     }
-    
-    if(mode == "erasing"){
-        componente.textContent[index] = "";
+
+    if (mode == "erasing") {
         index--;
-        setTimeout(liveWriting,100);
+        componente.textContent = textoServicios.substring(0, index);
+        setTimeout(liveWriting, 100);
     }
 }
 
