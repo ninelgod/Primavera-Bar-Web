@@ -69,7 +69,7 @@ $(document).ready(function(){
   });
 
 componente = document.getElementById('titulo-primavera-bar');
-const textoServicios = "Primavera bar";
+const textoServicios = "Leandro";
 componente.textContent = textoServicios[0];
 index = 1;
 function liveWriting() {
