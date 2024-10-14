@@ -68,7 +68,7 @@ $(document).ready(function(){
     });
   });
 
-componente = document.getElementById('titulo-primavera-bar');
+componente = document.getElementById('titulo');
 const textoServicios = "Leandro";
 componente.textContent = textoServicios[0];
 index = 1;
