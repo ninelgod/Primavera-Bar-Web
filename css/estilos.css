@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Margarine&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-
+::selection {
+    background: black;  
+    color: white;       
+  }
+  
+::-moz-selection {
+    background: black;
+    color: white;
+  }
+  
 html {
     scroll-padding-top: 80px;
     scroll-behavior: smooth;
@@ -62,7 +71,7 @@ nav ul li a {
 .about-page #navbar {
     background: #151219f8;
 }
-#fotofondo {
+#bg-photo {
     width: 100%;
     height: 90vh;
     object-fit: cover;
@@ -86,15 +95,14 @@ body {
 
 .slick-carousel img {
     height: 300px; 
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
     object-fit: cover;
     width: 100%; 
     border-radius: 10%;
 }
 
 .slick-carousel {
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto; 
 }
 
@@ -164,11 +172,6 @@ body {
     margin-top: 90px;
 }
 
-.alinear-btn {
-    display: flex;
-    justify-content: center;
-}
-
 .icon {
     width: 40px;
     height: 40px;
@@ -186,8 +189,26 @@ footer {
     padding: 15px 0;
     background: #151219;
 }
+a i.fa-facebook{
+    font-size: 45px;
+    color: #868686;
+    margin-right: 10px;
+}
 
-.letras-debajo {
+a:hover i.fa-facebook{
+    color: #ffffff;    
+}
+
+a i.fa-instagram{
+    font-size: 48px;
+    color: #868686;
+    margin-right: 10px;
+}
+a:hover i.fa-instagram{
+    color: #ffffff;    
+}
+
+.letters-below{
     margin-top: 40px;
     margin-bottom: 60px;
 }
@@ -202,12 +223,12 @@ footer h5 {
     margin: 5px 0;
 }
 
-.letras-debajo a {
+.letters-below a {
     color: rgb(201, 200, 200);
     text-decoration: none;
 }
 
-.letras-debajo a:hover {
+.letters-below a:hover {
     text-decoration: underline;
     color: #fff;
 }
@@ -224,15 +245,6 @@ footer h5 {
     background-color: white;
     box-shadow: none;
 }
-
-.navbar-toggler {
-    border: none;
-}
-
-.alinear-image {
-    padding: 5% 0;
-    text-align: center;
-}
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
@@ -240,7 +252,7 @@ footer h5 {
     padding-left: 15px; 
     margin: auto;
 }
-#fotofondo {
+#bg-photo {
     width: 100%;
     height: 40vh;
     object-fit: cover;
