@@ -68,9 +68,10 @@ nav ul li a {
     color: black;
 }
 
-.about-page #navbar {
+.block-nav #navbar {
     background: #151219f8;
 }
+
 #bg-photo {
     width: 100%;
     height: 90vh;
