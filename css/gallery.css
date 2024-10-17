@@ -115,7 +115,7 @@ h1{
 
 @media (max-width: 1024px) {
     .column0 {
-        max-width:52%;
+        max-width:50%;
     }
 
     .column1 {
